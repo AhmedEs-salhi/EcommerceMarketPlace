@@ -1,0 +1,13 @@
+CREATE OR REPLACE PACKAGE pkg_audit AS
+  PROCEDURE log_action(p_action_type VARCHAR2, p_entity VARCHAR2, p_entity_id NUMBER, p_details VARCHAR2);
+END pkg_audit;
+/
+
+CREATE OR REPLACE PACKAGE BODY pkg_audit AS
+  PROCEDURE log_action(p_action_type VARCHAR2, p_entity VARCHAR2, p_entity_id NUMBER, p_details VARCHAR2) IS
+  BEGIN
+    INSERT INTO LOG_ACTIONS(Id_Log, Action_Type, Entity_Type, Entity_Id, Performed_At, Details)
+    VALUES (SEQ_LOG.NEXTVAL, p_action_type, p_entity, p_entity_id, SYSDATE, p_details);
+  END;
+END pkg_audit;
+/

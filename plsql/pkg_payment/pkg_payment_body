@@ -1,0 +1,24 @@
+CREATE OR REPLACE PACKAGE pkg_payment AS
+  FUNCTION apply_coupon(p_id_commande NUMBER, p_code_coupon VARCHAR2) RETURN NUMBER;
+  PROCEDURE process_payment(p_id_commande NUMBER, p_mode VARCHAR2);
+END pkg_payment;
+/
+
+CREATE OR REPLACE PACKAGE BODY pkg_payment AS
+  FUNCTION apply_coupon(p_id_commande NUMBER, p_code_coupon VARCHAR2) RETURN NUMBER IS
+    v_total NUMBER := 0;
+  BEGIN
+    -- Calculate total and apply coupon logic here
+    RETURN v_total;
+  END;
+
+  PROCEDURE process_payment(p_id_commande NUMBER, p_mode VARCHAR2) IS
+  BEGIN
+    INSERT INTO Paiement(Id_Paiement, Montant, Date_Paiement, Mode_Paiement, Id_Commande_FK)
+    VALUES (SEQ_PAIEMENT.NEXTVAL, 0, SYSDATE, p_mode, p_id_commande);
+
+    UPDATE Commande SET Statut = 'Paid'
+    WHERE Id_Commande = p_id_commande;
+  END;
+END pkg_payment;
+/

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/plsql/pkg_order/pkg_order_body.sql" value="0a49ec8a-2422-49eb-a671-0846bc945d6c" />
+    <file url="file://$PROJECT_DIR$/plsql/pkg_order/pkg_order_specs.sql" value="0a49ec8a-2422-49eb-a671-0846bc945d6c" />
+    <file url="file://$PROJECT_DIR$/plsql/pkg_produit/pkg_produit_body.sql" value="0a49ec8a-2422-49eb-a671-0846bc945d6c" />
+    <file url="file://$PROJECT_DIR$/plsql/pkg_produit/pkg_produit_specs.sql" value="0a49ec8a-2422-49eb-a671-0846bc945d6c" />
+    <file url="file://$PROJECT_DIR$/plsql/pkg_refund/pkg_refund_body.sql" value="0a49ec8a-2422-49eb-a671-0846bc945d6c" />
+    <file url="file://$PROJECT_DIR$/plsql/pkg_refund/pkg_refund_specs.sql" value="0a49ec8a-2422-49eb-a671-0846bc945d6c" />
+    <file url="file://$PROJECT_DIR$/plsql/pkg_tests/pkg_order_tests.sql" value="0a49ec8a-2422-49eb-a671-0846bc945d6c" />
+    <file url="file://$PROJECT_DIR$/plsql/pkg_tests/pkg_user_tests.sql" value="0a49ec8a-2422-49eb-a671-0846bc945d6c" />
+    <file url="file://$PROJECT_DIR$/plsql/pkg_user_body.sql" value="0a49ec8a-2422-49eb-a671-0846bc945d6c" />
+    <file url="file://$PROJECT_DIR$/plsql/pkg_user_specs.sql" value="0a49ec8a-2422-49eb-a671-0846bc945d6c" />
+    <file url="file://$PROJECT_DIR$/queries/Query.sql" value="0a49ec8a-2422-49eb-a671-0846bc945d6c" />
+    <file url="file://$PROJECT_DIR$/queries/Query_1.sql" value="514eca37-20f9-4984-a7dc-d1cc723e9307" />
+  </component>
+</project>
